@@ -34,6 +34,11 @@ Traceback (most recent call last):
     self.assertEqual(len(self.buffer.storage), 5)
 AttributeError: 'ArrayRingBuffer' object has no attribute 'storage'
 
+- The test was for this:
+ def test__array_ring_buffer(self):
+        self.assertEqual(len(self.buffer.storage), 5)
+        - No attribute for storage?
+
 Traceback (most recent call last):
   File "test_ring_buffer.py", line 18, in test_ring_buffer
     self.assertEqual(self.buffer.get(), ['a', 'b', 'c', 'd'])
